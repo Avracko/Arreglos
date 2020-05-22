@@ -1,0 +1,33 @@
+package vectores;
+import java.util.Scanner;
+
+public class Vectores {
+
+    public static void main(String[] args) {
+        
+         Scanner T = new Scanner(System.in);
+         int[] x = new int[2],y = new int [2],z = new int[2];
+         
+         for (short i = 0; i<=1;i++){
+             
+             System.out.println("Ingrese el punto x enla posicion :" +(i+1));
+             x[i] = T.nextInt();
+         }
+          for (short i = 0; i<=1;i++){
+             
+             System.out.println("Ingrese el punto y enla posicion :" +(i+1));
+             y[i] = T.nextInt();
+         }
+           for (short i = 0; i<=1;i++){
+             
+            z[i]=y[i]-x[i];
+         }
+           System.out.print("(");
+           for (short i = 0; i<=1;i++){
+             
+            System.out.print(z[i]+ ",");
+         }
+           System.out.print(")");
+    }
+    
+}
